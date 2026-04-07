@@ -62,3 +62,48 @@ It also includes an interactive dashboard built with Streamlit to visualize key 
 ---
 
 ## 📁 Project Structure
+sales-forecast-dashboard/
+│── app.py
+│── analysis.ipynb
+│── requirements.txt
+│── screenshots/
+│   └── dashboard.png
+
+---
+
+## ⚙️ How to Run the Project
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/sales-forecast-dashboard.git
+cd sales-forecast-dashboard
+```
+###2. Install dependencies
+```bash
+python3 -m streamlit run app.py
+```
+###3. Run the dashboard
+```bash
+python3 -m streamlit run app.py
+```
+###4. Open in browser
+```bash
+http://localhost:8501
+```
+
+## 📊 Key Insights
+	•	Total revenue is approximately $2.26M
+	•	The West region generates the highest sales
+	•	Technology is the top-performing category
+	•	Sales show an upward trend over time
+	•	Seasonality patterns improve forecast accuracy
+
+## 🔮 Future Improvements
+	•	Deploy the dashboard online
+	•	Use advanced forecasting models (ARIMA, Prophet)
+	•	Add more interactive filters
+	•	Improve model evaluation with more metrics
+
+## 👩‍💻 Author
+Salma Morkani
+
