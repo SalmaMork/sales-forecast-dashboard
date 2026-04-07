@@ -62,13 +62,14 @@ It also includes an interactive dashboard built with Streamlit to visualize key 
 ---
 
 ## 📁 Project Structure
+```bash
 sales-forecast-dashboard/
 │── app.py
 │── analysis.ipynb
 │── requirements.txt
 │── screenshots/
 │   └── dashboard.png
-
+```
 ---
 
 ## ⚙️ How to Run the Project
