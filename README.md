@@ -76,18 +76,18 @@ sales-forecast-dashboard/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/sales-forecast-dashboard.git
+git clone https://github.com/SalmaMork/sales-forecast-dashboard.git
 cd sales-forecast-dashboard
 ```
-###2. Install dependencies
+### 2. Install dependencies
+```bash
+python3 -m pip install -r requirements.txt
+```
+### 3. Run the dashboard
 ```bash
 python3 -m streamlit run app.py
 ```
-###3. Run the dashboard
-```bash
-python3 -m streamlit run app.py
-```
-###4. Open in browser
+### 4. Open in browser
 ```bash
 http://localhost:8501
 ```
