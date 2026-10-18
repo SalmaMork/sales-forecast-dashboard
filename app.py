@@ -61,12 +61,21 @@ model = LinearRegression()
 model.fit(X, y)
 
 # Future forecast
-future_months = np.arange(len(monthly_sales), len(monthly_sales) + 12)
+future_months = np.arange(
+    monthly_sales["Month_num"].max() + 1,
+    monthly_sales["Month_num"].max() + 13
+)
+future_dates = pd.date_range(
+    start=monthly_sales["Month"].max() + pd.offsets.MonthBegin(1),
+    periods=12,
+    freq="MS"
+)
 future_df = pd.DataFrame({
-    "Month_num": future_months
+    "Month_num": future_months,
+    "Month": future_dates
 })
 
-future_df["Month_of_year"] = (future_df["Month_num"] % 12) + 1
+future_df["Month_of_year"] = future_df["Month"].dt.month
 future_df["Month_sin"] = np.sin(2 * np.pi * future_df["Month_of_year"] / 12)
 future_df["Month_cos"] = np.cos(2 * np.pi * future_df["Month_of_year"] / 12)
 
